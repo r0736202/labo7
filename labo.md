@@ -70,7 +70,7 @@ Als je dit allemaal hebt opgestart, zou je op [HOST_IP]:9090 het dashboard van p
 
 Wanneer de installatie gelukt is, en je het dashboard van prometheus te zien krijgt, kan je in de navigatiebalk naar Status>Targets navigeren. Hier zou je 2 targets met telkens 1 endpoint moeten zien.
 
-![](targets.png)
+![](images/targets.png)
 
 Zoals je ziet komt dit overeen met wat we op voorhand in de configuratiefile hadden gezet. De eerste target, cadvisor, zal eens een heleboel data verzamelen over de containers die op onze host draaien (dankzij de volumes die we eraan hebben gegeven), en in een voor Prometheus leesbare manier aanbieden. Hoe ziet dat er precies uit? Surf eens naar [HOST-IP]:8080/metrics. Dit zal een groot textfile zijn met een heleboel key-value-waarden. Vernieuw deze pagina ee naantal keer en je zal de waarden ook zien veranderen.
 
@@ -81,7 +81,7 @@ Daarnaast biedt de Prometheus-server ook zelf een aantal metrics aan. Deze vind 
 
 Hoe vraag je die data nu op? Dat vind je terug onder 'Graph' onder de navigatiebalk.
 
-![](emptyquery.png)
+![](images/emptyquery.png)
 
 Hier kan je data opvragen door gebruik te maken van [PromQL](https://prometheus.io/docs/prometheus/latest/querying/basics/), Prometheus Query Language.
 
@@ -95,8 +95,8 @@ Wanneer je hiernaartoe surft zal je om een gebruikersnaam en wachtwoord vragen. 
 
 Eerst en vooral zal je een nieuwe datasource moeten toevoegen. Dit kan je doen onder instellingen. Uiteraard kies je voor een Prometheus-datasource. Als URL gebruik je http://[HOST-IP]:9090. Voor de rest hoef je niets aan te passen, en klik je onderaan op Save & Test
 
-![](datasource_conf.png)
+![](images/datasource_conf.png)
 
 Hierna kan je je eerste dashboard maken. Probeer eens de queries van hierboven te kopiëren in een nieuw paneel op je dashboard. Verken ook zeker eens de opties die je in het paneel rechts aangeboden krijgt, om de data op verschillende manieren te visualiseren. Vergeet zeker niet je paneel op te slaan als je er mee klaar bent!
 
-![](query_example.png)
+![](images/query_example.png)
