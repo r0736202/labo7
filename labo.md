@@ -49,7 +49,7 @@ volumes:
   ```
 prometheus.yml
   ```yml
-  global:
+global:
   scrape_interval:     15s
   evaluation_interval: 15s
 
@@ -58,10 +58,10 @@ scrape_configs:
 
     static_configs:
       - targets: ['prometheus:9090']
-
   - job_name: 'cadvisor'
     static_configs:
       - targets: ['cadvisor:8080']
+
 ```
 
 Als je dit allemaal hebt opgestart, zou je op [HOST_IP]:9090 het dashboard van prometheus moeten zien.
