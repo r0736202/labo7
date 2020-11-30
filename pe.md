@@ -51,12 +51,12 @@ Weergeef het aantal beschikbare GIGABYTES aan geheugen. (tip: node_memory_MemAva
 
 ![](images/pe4.png)
 
-## Aantal files op de schijf
+## Paneel 5: Aantal files op de schijf
 
 Weergeef het aantal files dat op het filesystem aanwezig zijn (tip: mountpoint={"/"})
 ![](images/pe5.png)
 
-## Aantal actieve (runnende processen)
+## Paneel 6: Aantal actieve (runnende processen)
 
 Ook deze spreekt voorzich: toon het aantal processen dat actief is.
 ![](images/pe6.png)
